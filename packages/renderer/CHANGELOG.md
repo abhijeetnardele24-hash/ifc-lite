@@ -1,5 +1,13 @@
 # @ifc-lite/renderer
 
+## 6.0.1
+
+### Patch Changes
+
+- [#6524](https://github.com/LTplus-AG/ifc-lite/pull/6524) [`970be46`](https://github.com/LTplus-AG/ifc-lite/commit/970be46e1c6d437c7989ad3e8bb9a0896df11185) Thanks [@louistrue](https://github.com/louistrue)! - Preserve valid authored Float32 mesh frames when bounding-box recentering would collapse triangles during GPU upload.
+- Updated dependencies [[`1051a74`](https://github.com/LTplus-AG/ifc-lite/commit/1051a74edca83eb3e6104562a7a65e0e645ac45b), [`6dace7b`](https://github.com/LTplus-AG/ifc-lite/commit/6dace7b05927505e9a9529674c635a505ce0c887)]:
+  - @ifc-lite/geometry@7.6.1
+
 ## 6.0.0
 
 ### Major Changes

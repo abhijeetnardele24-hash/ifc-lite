@@ -1,5 +1,19 @@
 # @ifc-lite/geometry
 
+## 7.6.1
+
+### Patch Changes
+
+- [#6562](https://github.com/LTplus-AG/ifc-lite/pull/6562) [`1051a74`](https://github.com/LTplus-AG/ifc-lite/commit/1051a74edca83eb3e6104562a7a65e0e645ac45b) Thanks [@louistrue](https://github.com/louistrue)! - Preserve remeshing panic source locations across the worker boundary ([#6555](https://github.com/LTplus-AG/ifc-lite/issues/6555)), including when cleanup also traps. Consume cleanup locations so a later request cannot inherit them. Forward only Rust source location and timestamp, without model-derived panic text.
+  
+  Rebuild the handle after any failed remesh or style-wire request, including an ordinary primary error followed by a cleanup trap. Preserve the primary failure and prevent reuse of partially cleaned state.
+
+- [#6561](https://github.com/LTplus-AG/ifc-lite/pull/6561) [`6dace7b`](https://github.com/LTplus-AG/ifc-lite/commit/6dace7b05927505e9a9529674c635a505ce0c887) Thanks [@louistrue](https://github.com/louistrue)! - Stop shared-buffer compatibility retries after a WASM runtime trap ([#6542](https://github.com/LTplus-AG/ifc-lite/issues/6542)). Preserve the first failure instead of replaying a failed instance with a full file copy. Keep non-trap compatibility retries and existing per-entity batch recovery, and direct large-model failures to smaller inputs or the native CLI/server.
+  
+  Performance verdict: successful mesh production is unchanged; no end-to-end throughput improvement is claimed. Worker contract tests verify that traps avoid the copying retry.
+- Updated dependencies [[`dd8e27c`](https://github.com/LTplus-AG/ifc-lite/commit/dd8e27cccbfd27cc6c16f09d66542c1c9bd17075), [`526a91b`](https://github.com/LTplus-AG/ifc-lite/commit/526a91bdf33e2be2d6167df95a68db343b5337c0)]:
+  - @ifc-lite/wasm@10.2.1
+
 ## 7.6.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @ifc-lite/mutations
 
+## 3.1.0
+
+### Minor Changes
+
+- [#6539](https://github.com/LTplus-AG/ifc-lite/pull/6539) [`e8ced94`](https://github.com/LTplus-AG/ifc-lite/commit/e8ced940d5cd6c9789f1221c5aeb7cdae883da3b) Thanks [@louistrue](https://github.com/louistrue)! - Expose the current named, positional and type override entity IDs for effective ownership checks. Hosted GlobalId validation indexes immutable source IfcRoot ownership once and checks live overrides and creations without decoding unrelated geometry on each placement.
+
 ## 3.0.0
 
 ### Major Changes

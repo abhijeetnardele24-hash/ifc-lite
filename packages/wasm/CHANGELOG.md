@@ -1,5 +1,13 @@
 # @ifc-lite/wasm
 
+## 10.2.1
+
+### Patch Changes
+
+- [#6502](https://github.com/LTplus-AG/ifc-lite/pull/6502) [`dd8e27c`](https://github.com/LTplus-AG/ifc-lite/commit/dd8e27cccbfd27cc6c16f09d66542c1c9bd17075) Thanks [@louistrue](https://github.com/louistrue)! - Place elements on IFC2X3 and IFC4 grid intersections correctly. An `IfcGridPlacement` in those schemas has no `PlacementRelTo`, so the mesher now reads its attributes in the layout the file declares and positions the element in the frame of the grid that owns the axes, instead of at the world origin.
+
+- [#6536](https://github.com/LTplus-AG/ifc-lite/pull/6536) [`526a91b`](https://github.com/LTplus-AG/ifc-lite/commit/526a91bdf33e2be2d6167df95a68db343b5337c0) Thanks [@louistrue](https://github.com/louistrue)! - Reuse validated group retessellation when disjoint opening cutters miss a host, avoiding repeated single-cutter arrangements while preserving geometry repair and existing fallback gates.
+
 ## 10.2.0
 
 ### Minor Changes

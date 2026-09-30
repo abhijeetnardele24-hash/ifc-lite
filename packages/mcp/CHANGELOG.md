@@ -1,5 +1,23 @@
 # @ifc-lite/mcp
 
+## 0.23.0
+
+### Minor Changes
+
+- [#6539](https://github.com/LTplus-AG/ifc-lite/pull/6539) [`e8ced94`](https://github.com/LTplus-AG/ifc-lite/commit/e8ced940d5cd6c9789f1221c5aeb7cdae883da3b) Thanks [@louistrue](https://github.com/louistrue)! - Share atomic hosted placement between viewer, SDK and MCP. Refuse wall cuts that do not fit, overlap source or overlay openings, or have unreadable geometry; measure mapped opening bounds and undo complete MCP placements in one operation. Explicit unreadable placement axes and incomplete body/profile references are refused rather than replaced by default or partial bounds.
+
+### Patch Changes
+
+- Updated dependencies [[`455ddc3`](https://github.com/LTplus-AG/ifc-lite/commit/455ddc3899ea6a5debce36543de5b8f009bb711f), [`1051a74`](https://github.com/LTplus-AG/ifc-lite/commit/1051a74edca83eb3e6104562a7a65e0e645ac45b), [`495591f`](https://github.com/LTplus-AG/ifc-lite/commit/495591f97d5c6328bf122b1ed0940149f91d25f8), [`9eeefec`](https://github.com/LTplus-AG/ifc-lite/commit/9eeefec2d62444f6fbb61c7f5ea1a42713e76fe3), [`e8ced94`](https://github.com/LTplus-AG/ifc-lite/commit/e8ced940d5cd6c9789f1221c5aeb7cdae883da3b), [`c380322`](https://github.com/LTplus-AG/ifc-lite/commit/c3803226a6a6b11fd23e1472ae5f54d7c4ebc083), [`6dace7b`](https://github.com/LTplus-AG/ifc-lite/commit/6dace7b05927505e9a9529674c635a505ce0c887), [`6acbc17`](https://github.com/LTplus-AG/ifc-lite/commit/6acbc17f88aa58baf5d8f258582b41fc4b6ca094), [`4a9e7ad`](https://github.com/LTplus-AG/ifc-lite/commit/4a9e7ad337bafc495aa02be9e46a6ef130b9a075), [`ba5b8c0`](https://github.com/LTplus-AG/ifc-lite/commit/ba5b8c0de4cf957001cae181b4e1201ce5c86136), [`20c9c90`](https://github.com/LTplus-AG/ifc-lite/commit/20c9c90a658d6d62a544c72ef39e28de2baeac34), [`455ddc3`](https://github.com/LTplus-AG/ifc-lite/commit/455ddc3899ea6a5debce36543de5b8f009bb711f), [`7dda95f`](https://github.com/LTplus-AG/ifc-lite/commit/7dda95f8b39222dc25479c0037b3b806fce24cbb), [`e01487f`](https://github.com/LTplus-AG/ifc-lite/commit/e01487ff2f40fa758b73b3ec9a6abba9f9ff646b), [`e8ced94`](https://github.com/LTplus-AG/ifc-lite/commit/e8ced940d5cd6c9789f1221c5aeb7cdae883da3b), [`003f4ff`](https://github.com/LTplus-AG/ifc-lite/commit/003f4ff7fdc12ab92d601811792baa71b997a3ff), [`64c343b`](https://github.com/LTplus-AG/ifc-lite/commit/64c343bfea7de91b2a44a895f6302f3b1a7f70a7), [`2c6be4a`](https://github.com/LTplus-AG/ifc-lite/commit/2c6be4a52f513f174d8eae9bea4e77c7f00edea4), [`a02add5`](https://github.com/LTplus-AG/ifc-lite/commit/a02add592587ce018ecbfbdda3a08245f7664ff1), [`e3b5f98`](https://github.com/LTplus-AG/ifc-lite/commit/e3b5f98fd6dadb605fea49521eb290b9b5abc704), [`ec983d3`](https://github.com/LTplus-AG/ifc-lite/commit/ec983d378bfccc2b65fb636a76e321a2c9482aa4)]:
+  - @ifc-lite/create@3.3.0
+  - @ifc-lite/geometry@7.6.1
+  - @ifc-lite/sdk@8.1.0
+  - @ifc-lite/ids@3.2.0
+  - @ifc-lite/rules@0.6.0
+  - @ifc-lite/parser@9.2.0
+  - @ifc-lite/mutations@3.1.0
+  - @ifc-lite/collab@0.10.0
+
 ## 0.22.1
 
 ### Patch Changes
